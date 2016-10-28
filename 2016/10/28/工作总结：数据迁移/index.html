@@ -3,24 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>实战：JavaScript加快报表填写 | 阳光下的云</title>
+  <title>工作总结：数据迁移 | 阳光下的云</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="导语
-最近公司很多人要填加班申请，但是由于公司的加班申请是网页版，而且需要填写的信息比较繁琐、重复，所以就想到了使用简单的Javascript，来完成这项工作，节省大家的时间。毕竟程序员嘛，总会想偷懒的。">
+  <meta name="description" content="阳光,云">
 <meta property="og:type" content="article">
-<meta property="og:title" content="实战：JavaScript加快报表填写">
-<meta property="og:url" content="https://yangguangxiadeyun.github.io/2016/09/30/实战：JavaScript加快报表填写/index.html">
+<meta property="og:title" content="工作总结：数据迁移">
+<meta property="og:url" content="https://yangguangxiadeyun.github.io/2016/10/28/工作总结：数据迁移/index.html">
 <meta property="og:site_name" content="阳光下的云">
-<meta property="og:description" content="导语
-最近公司很多人要填加班申请，但是由于公司的加班申请是网页版，而且需要填写的信息比较繁琐、重复，所以就想到了使用简单的Javascript，来完成这项工作，节省大家的时间。毕竟程序员嘛，总会想偷懒的。">
-<meta property="og:image" content="https://yangguangxiadeyun.github.io/image/javascript_ot.png">
-<meta property="og:image" content="https://yangguangxiadeyun.github.io/image/javascript_ot1.png">
-<meta property="og:updated_time" content="2016-10-16T10:58:28.624Z">
+<meta property="og:description" content="阳光,云">
+<meta property="og:updated_time" content="2016-10-28T09:23:37.915Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="实战：JavaScript加快报表填写">
-<meta name="twitter:description" content="导语
-最近公司很多人要填加班申请，但是由于公司的加班申请是网页版，而且需要填写的信息比较繁琐、重复，所以就想到了使用简单的Javascript，来完成这项工作，节省大家的时间。毕竟程序员嘛，总会想偷懒的。">
-<meta name="twitter:image" content="https://yangguangxiadeyun.github.io/image/javascript_ot.png">
+<meta name="twitter:title" content="工作总结：数据迁移">
+<meta name="twitter:description" content="阳光,云">
   
     <link rel="alternative" href="/atom.xml" title="阳光下的云" type="application/atom+xml">
   
@@ -238,11 +232,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-实战：JavaScript加快报表填写" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-工作总结：数据迁移" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/30/实战：JavaScript加快报表填写/" class="article-date">
-      <time datetime="2016-09-30T00:25:51.000Z" itemprop="datePublished">2016-09-30</time>
+      <a href="/2016/10/28/工作总结：数据迁移/" class="article-date">
+      <time datetime="2016-10-28T09:23:37.000Z" itemprop="datePublished">2016-10-28</time>
 </a>
     </div>
   
@@ -255,7 +249,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      实战：JavaScript加快报表填写
+      工作总结：数据迁移
     </h1>
   
 
@@ -265,10 +259,6 @@
         
 
         
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实战/">实战</a></li></ul>
-    </div>
-
         <div class="clearfix"></div>
       </div>
       
@@ -276,59 +266,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h3><blockquote>
-<p>最近公司很多人要填加班申请，但是由于公司的加班申请是网页版，而且需要填写的信息比较繁琐、重复，所以就想到了使用简单的Javascript，来完成这项工作，节省大家的时间。毕竟程序员嘛，总会想偷懒的。<br><a id="more"></a></p>
-</blockquote>
-<h3 id="一、所需填写的信息"><a href="#一、所需填写的信息" class="headerlink" title="一、所需填写的信息"></a>一、所需填写的信息</h3><ol>
-<li>加班理由</li>
-<li>加班日期</li>
-<li>开始时间</li>
-<li>结束时间</li>
-<li>加班时长</li>
-<li>添加按钮</li>
-</ol>
-<h3 id="二、查看源代码"><a href="#二、查看源代码" class="headerlink" title="二、查看源代码"></a>二、查看源代码</h3><p>由于该页面对Chrome、Firefox等流行浏览器支持不是很好，就在IE下面进行。</p>
-<ol>
-<li>直接按键盘上的F12打开<code>F12 Developer Tools</code>，并切换到<code>DOM Explorer</code>选项卡下面。（更多关于<code>DOM</code>和<code>Javascript</code>教程，请移步<a href="http://www.w3school.com.cn/js/js_htmldom.asp" target="_blank" rel="external">JavaScript HTML DOM</a></li>
-<li>点击鼠标选择工具；</li>
-<li>到加班申请的页面上对应要填写的位置用鼠标点击以确定它的代码位置，如加班理由的填写框里面；</li>
-<li>位置确定后我们就可以在DOM Explorer里面看到对应的代码<code>id=&quot;textareaOTReason&quot;</code>了。</li>
-</ol>
-<p>如图<br><img src="/image/javascript_ot.png" alt="javascript_ot"><br>重复上面第二找到所需填写的信息所对应的<code>id</code>，然后进行下一步。</p>
-<h3 id="三、编写Javascript代码"><a href="#三、编写Javascript代码" class="headerlink" title="三、编写Javascript代码"></a>三、编写Javascript代码</h3><pre><code>function add_OT(textOTDate) {
-    document.getElementById(&apos;textareaOTReason&apos;).value = &quot;I&apos;m forced to OT&quot;;
-    document.getElementById(&apos;textOTDate&apos;).value = textOTDate;
-    document.getElementById(&apos;DropdownlistTimeFromHour&apos;).options[18].selected = true;
-    document.getElementById(&apos;DropdownlistTimeToHour&apos;).options[19].selected = true;
-    document.getElementById(&apos;textboxApplicableHours&apos;).value   = &quot;1&quot;;
-    GridInsertRow(&apos;grid&apos;);UpdateChinaLeaveHour();
-}
-</code></pre><p>下面稍微解释一下上面代码：</p>
-<pre><code>function *function_name*(*function parameters*){}
-</code></pre><blockquote>
-<p>这里定义一个方法，以后可以重复调用，并传入参数“加班日期”。因为我大部分的加班理由、起止时间、加班时长都是一样，我就直接硬编码进去。<br>大家如果有需要可以改成参数，并相应调整代码。</p>
-</blockquote>
-<pre><code>document.getElementById.value
-</code></pre><ol>
-<li><code>document</code>是Javascript把浏览器加载的HTML文档解析成<code>document</code>对象，我们访问<code>document</code>就可以说访问了整个HTML页面。</li>
-<li><code>document.getElementById</code>是通过document获取元素节点的方法之一，这里通过元素节点的id属性来获取元素节点，如<code>textareaOTReason</code>可以获取id为<code>textareaOTReason</code>的元素节点。</li>
-<li>我们还可以通过<code>document.getElementsByName()</code>、<code>document.getElementsByTagName()</code>来获取带有指定名称的对象集合、返回带有指定标签名的对象集合。</li>
-<li>获取到元素节点后，我们通过为该节点的元素属性<code>value</code>赋值来填写我们原来在页面上需要录入的信息。</li>
-</ol>
-<pre><code>document.getElementById(&apos;DropdownlistTimeFromHour&apos;).options[18].selected
-</code></pre><blockquote>
-<p><code>.options[18]</code>：当我们获取到的元素节点是下拉列表的时候，我们需要特殊处理。<code>option[*n*]</code>是指列表中的第十八个；<br><code>selected</code>:把<code>true</code>设置给这个属性，说明我们选中的下拉列表的第十八个。</p>
-</blockquote>
-<pre><code>GridInsertRow(&apos;grid&apos;);UpdateChinaLeaveHour();
-</code></pre><blockquote>
-<p>该方法是原来我们点击添加加班申请会调用的方法，这里直接重用。</p>
-</blockquote>
-<h3 id="四、重复调用方法add-OT"><a href="#四、重复调用方法add-OT" class="headerlink" title="四、重复调用方法add_OT"></a>四、重复调用方法add_OT</h3><ol>
-<li>切换到<code>F12 Developer Tools</code>中的<code>Console</code>选项卡，把我们上面写的script贴进去跑；</li>
-<li>调用<code>add_OT(&#39;06/01/2016&#39;);</code></li>
-<li>到页面查看实际情况。<br><img src="/image/javascript_ot1.png" alt="javascript_ot"></li>
-</ol>
-
+        
       
     </div>
     
@@ -336,13 +274,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/09/30/实战：JavaScript加快报表填写/">实战：JavaScript加快报表填写</a></p>
+        <p><span>本文标题:</span><a href="/2016/10/28/工作总结：数据迁移/">工作总结：数据迁移</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Linc01n Lin 的个人博客">Linc01n Lin</a></p>
-        <p><span>发布时间:</span>2016年09月30日 - 08时25分</p>
-        <p><span>最后更新:</span>2016年10月16日 - 18时58分</p>
+        <p><span>发布时间:</span>2016年10月28日 - 17时23分</p>
+        <p><span>最后更新:</span>2016年10月28日 - 17时23分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/09/30/实战：JavaScript加快报表填写/" title="实战：JavaScript加快报表填写">https://yangguangxiadeyun.github.io/2016/09/30/实战：JavaScript加快报表填写/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://yangguangxiadeyun.github.io/2016/09/30/实战：JavaScript加快报表填写/　　作者: Linc01n Lin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/10/28/工作总结：数据迁移/" title="工作总结：数据迁移">https://yangguangxiadeyun.github.io/2016/10/28/工作总结：数据迁移/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://yangguangxiadeyun.github.io/2016/10/28/工作总结：数据迁移/　　作者: Linc01n Lin" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -355,18 +293,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/09/30/学习笔记：微服务Microservice/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          学习笔记：微服务 Microservice
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/09/29/学习笔记：《英语词汇的奥秘》/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">《英语词汇的奥秘》学习笔记</div>
+    <a href="/2016/10/28/日常记录：不定期更新，不定期转移/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">日常记录：不定期更新，不定期转移</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -377,7 +306,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#导语"><span class="toc-number">1.</span> <span class="toc-text">导语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一、所需填写的信息"><span class="toc-number">2.</span> <span class="toc-text">一、所需填写的信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、查看源代码"><span class="toc-number">3.</span> <span class="toc-text">二、查看源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、编写Javascript代码"><span class="toc-number">4.</span> <span class="toc-text">三、编写Javascript代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、重复调用方法add-OT"><span class="toc-number">5.</span> <span class="toc-text">四、重复调用方法add_OT</span></a></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -425,7 +354,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/09/30/实战：JavaScript加快报表填写/" data-title="实战：JavaScript加快报表填写" data-url="https://yangguangxiadeyun.github.io/2016/09/30/实战：JavaScript加快报表填写/"></div>
+    <div class="ds-thread" data-thread-key="2016/10/28/工作总结：数据迁移/" data-title="工作总结：数据迁移" data-url="https://yangguangxiadeyun.github.io/2016/10/28/工作总结：数据迁移/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -448,13 +377,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/09/30/学习笔记：微服务Microservice/" title="上一篇: 学习笔记：微服务 Microservice">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/09/29/学习笔记：《英语词汇的奥秘》/" title="下一篇: 《英语词汇的奥秘》学习笔记">
+            <a href="/2016/10/28/日常记录：不定期更新，不定期转移/" title="下一篇: 日常记录：不定期更新，不定期转移">
                 <i class="fa fa-angle-right"></i>
             </a>
         
